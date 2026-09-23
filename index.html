@@ -1,1 +1,363 @@
-Coming soon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ruhin Chakravarty's CS 180 AI Portfolio">
+    <title>Ruhin Chakravarty | CS 180 Portfolio</title>
+
+    <style>
+        /* ===== GENERAL STYLING ===== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        html {
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #160b24;
+            color: #f5f0fa;
+            line-height: 1.7;
+        }
+
+        /* ===== NAVIGATION ===== */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(22, 11, 36, 0.95);
+            border-bottom: 1px solid #4b2770;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 18px 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #e9d9ff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #b77aff;
+        }
+
+        /* ===== HERO / ABOUT ME ===== */
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 100px 30px;
+        }
+
+        .hero-label {
+            color: #a86ee8;
+            font-size: 1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            line-height: 1.05;
+            margin-bottom: 50px;
+            color: #ffffff;
+        }
+
+        .about-content {
+            max-width: 850px;
+        }
+
+        .about-content h2 {
+            color: #b77aff;
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        .about-content p {
+            color: #ddd1e8;
+            font-size: 1.05rem;
+            margin-bottom: 22px;
+        }
+
+        /* ===== GENERAL SECTIONS ===== */
+
+        section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 110px 30px;
+        }
+
+        .section-number {
+            color: #a86ee8;
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        section h2 {
+            color: #ffffff;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            margin-bottom: 30px;
+        }
+
+        .outcome-card {
+            background: #211032;
+            border: 1px solid #4b2770;
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .outcome-card h3 {
+            color: #c99cff;
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+        }
+
+        .coming-soon {
+            color: #b9a8c8;
+            font-style: italic;
+            border-left: 3px solid #8b4dcc;
+            padding-left: 15px;
+        }
+
+        /* ===== AI USE SECTION ===== */
+
+        .ai-log {
+            background: #211032;
+            border: 1px solid #4b2770;
+            border-radius: 16px;
+            padding: 35px;
+        }
+
+        .ai-log p {
+            color: #ddd1e8;
+            margin-bottom: 15px;
+        }
+
+        .ai-log strong {
+            color: #c99cff;
+        }
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 1px solid #4b2770;
+            color: #9f8baa;
+        }
+
+        /* ===== MOBILE RESPONSIVENESS ===== */
+
+        @media (max-width: 700px) {
+            .nav-links {
+                gap: 12px;
+            }
+
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+
+            .hero {
+                padding: 80px 20px;
+            }
+
+            section {
+                padding: 80px 20px;
+            }
+
+            .outcome-card,
+            .ai-log {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== STICKY NAVIGATION ===== -->
+
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#ethics">Ethics</a></li>
+                <li><a href="#techniques">AI Techniques</a></li>
+                <li><a href="#machine-learning">Machine Learning</a></li>
+                <li><a href="#generative-ai">Generative AI</a></li>
+                <li><a href="#ai-use">AI Use</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== ABOUT ME ===== -->
+
+    <header class="hero" id="home">
+
+        <div class="hero-label">CS 180 Portfolio</div>
+
+        <h1>Ruhin Chakravarty</h1>
+
+        <div class="about-content">
+            <h2>About Me</h2>
+
+            <p>
+                Hello, my name is Ruhin Chakravarty. I am a sophomore at Drexel University majoring in Computer Science. I have chosen to take this CS 180 course because I want to be able to get a head start on my education in AI, since I want to do something with AI in the future for my career. I feel like AI is the future for a majority of people in the future, and companies will have to start adapting to AI to be able to keep up with this future. One time AI did show up in my life was when I was trying to organize my study schedule for my finals. AI was able to help me to create an efficient study schedule for all my final exams, which led to more success during my finals than would have happened had I not been effective with my studying.
+            </p>
+
+            <p>
+                One honest concern I have about AI has to do with the recent headlines about how AI might be getting out of control and could end humanity in a few decades. While I don’t think this is entirely true, I feel like employees coming out and saying things like this about AI should bring up conversations about how to properly control and use AI to humanity’s benefit, and make sure we use it as a tool for success for the human race. The course objective I’m most curious about is “Describe how core AI techniques such as search and adversarial reasoning are used to model intelligent behavior.” This interests me because I have always wondered how AI was able to develop to the point that it is at right now, since it seems like something magical. Something about me is that I am a big Philly sports fan. I love all the Philly area teams and I’m always excited to cheer them on.
+            </p>
+        </div>
+
+    </header>
+
+    <!-- ===== OUTCOME 1 ===== -->
+
+    <section id="history">
+        <div class="section-number">Outcome 01</div>
+        <h2>History</h2>
+
+        <div class="outcome-card">
+            <h3>
+                Explain key moments in the historical development of AI and ML and relate them to modern AI systems.
+            </h3>
+
+            <p class="coming-soon">
+                Evidence coming soon
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== OUTCOME 2 ===== -->
+
+    <section id="ethics">
+        <div class="section-number">Outcome 02</div>
+        <h2>Ethics</h2>
+
+        <div class="outcome-card">
+            <h3>
+                Identify and discuss ethical issues associated with AI and ML and their societal implications.
+            </h3>
+
+            <p class="coming-soon">
+                Evidence coming soon
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== OUTCOME 3 ===== -->
+
+    <section id="techniques">
+        <div class="section-number">Outcome 03</div>
+        <h2>AI Techniques</h2>
+
+        <div class="outcome-card">
+            <h3>
+                Describe how core AI techniques such as search and adversarial reasoning are used to model intelligent behavior.
+            </h3>
+
+            <p class="coming-soon">
+                Evidence coming soon
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== OUTCOME 4 ===== -->
+
+    <section id="machine-learning">
+        <div class="section-number">Outcome 04</div>
+        <h2>Machine Learning</h2>
+
+        <div class="outcome-card">
+            <h3>
+                Explain fundamental machine learning approaches and distinguish between major learning paradigms.
+            </h3>
+
+            <p class="coming-soon">
+                Evidence coming soon
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== OUTCOME 5 ===== -->
+
+    <section id="generative-ai">
+        <div class="section-number">Outcome 05</div>
+        <h2>Generative AI</h2>
+
+        <div class="outcome-card">
+            <h3>
+                Describe how generative AI and large language models operate at a conceptual level and evaluate their appropriate use.
+            </h3>
+
+            <p class="coming-soon">
+                Evidence coming soon
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== AI USE / CREDITS ===== -->
+
+    <section id="ai-use">
+        <div class="section-number">Transparency</div>
+        <h2>AI Use &amp; Credits</h2>
+
+        <div class="ai-log">
+            <p>
+                <strong>AI Collaboration Log</strong>
+            </p>
+
+            <p>
+                This section will contain my AI Collaboration Log documenting my use of AI while building and developing this portfolio.
+            </p>
+
+            <p>
+                The complete Format 2 collaboration log will be added here.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer>
+        <p>CS 180 Portfolio &mdash; Ruhin Chakravarty</p>
+    </footer>
+
+</body>
+</html>
